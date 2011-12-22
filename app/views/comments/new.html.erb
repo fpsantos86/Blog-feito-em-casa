@@ -1,0 +1,17 @@
+<%= form_for([@article, @article.comments.new]) do |f| %>
+<div class="fied">
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</div>
+<div class="fied">
+  <%= f.label :email %><br />
+  <%= f.text_field :email %>
+</div>
+<div class="fied">
+  <%= f.label :body %><br />
+  <%= f.text_field :body %>
+</div>
+<div class="actions">
+  <%= f.submit 'Add' %>
+</div>
+<% end %>

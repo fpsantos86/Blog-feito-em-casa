@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= content_tag :p, notice, :class => 'notice' if notice.present? %>
+<%= content_tag :p, alert, :class => 'alert' if alert.present? %>
+
+<%= yield %>
+
+</body>
+</html>
